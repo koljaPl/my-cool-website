@@ -114,10 +114,12 @@ body {
 /* Vertical Name  */
 .vertical-name {
     color: #fff;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
     font-size: 57px;
+    /* font-size: 100px;; */
     font-weight: 700;
     letter-spacing: 8px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -208,6 +210,15 @@ body {
 
 /* Social Links */
 .social-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    z-index: 10;
+}
+/* .social-links {
     position: absolute;
     right: 0;
     top: 0;
@@ -215,7 +226,7 @@ body {
     height: 100%;
     z-index: 10;
     pointer-events: none;
-}
+} */
 
 .social-bubble {
     position: absolute;
@@ -249,7 +260,14 @@ body {
 }
 
 /* Social Bubble Positions - Moved to the left */
-.github-link {
+.github-link, .youtube-link, .tiktok-link, .telegram-link, .crypto-link, .twitch-link {
+    position: static;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+}
+/* .github-link {
     top: 10%;
     left: 37%;
 }
@@ -279,7 +297,7 @@ body {
     bottom: 5%;
     top: 79%;
     left: 37%;
-}
+} */
 
 /* Description Section */
 .description-section {
